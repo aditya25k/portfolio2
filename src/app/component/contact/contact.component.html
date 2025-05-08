@@ -1,0 +1,17 @@
+<section id="contact">
+  <div class="contact-section" >
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, click the button below:</p>
+    <button (click)="toggleContactForm()" class="contact-button">Open Contact Form</button>
+    
+    <div class="contact-form" *ngIf="isFormVisible" [@slideInOut]>
+      <h3>Contact Form</h3>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </div>
+  </div>
+
+</section>
+

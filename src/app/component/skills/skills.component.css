@@ -1,0 +1,89 @@
+
+    .skill-con{
+        height: 100vh;
+        width: 100%;
+        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #1f242d;
+    }
+
+      
+.containermain{
+   text-align: left;
+    height: 100%;
+    display: flex;
+}
+.progress-container{
+    color: #3da1ff;
+    width: 50%;
+    padding-top: 10vh;
+    padding-left: 13vw;
+    font-size: 500;
+
+}
+.progress-container2{
+
+    width: 50%;
+    padding-top: 18vh;
+    padding-left: 13vw;
+}
+
+
+.progress-bar {
+  position: relative;
+  width: 300px;
+  height: 10px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  animation: fill-animation 2s forwards;
+}
+
+.progress-point {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border: 3px solid #00c6ff;
+  border-radius: 50%;
+  animation: point-animation 2s forwards;
+}
+
+@keyframes fill-animation {
+  to {
+    width: var(--progress);
+  }
+}
+
+@keyframes point-animation {
+  to {
+    left: var(--progress);
+  }
+}
+
+.progress-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,50 @@
+
+a{
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 90%;
+  padding: 20px 9%;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  animation: show-content 1.5s linear forwards;
+  animation-delay: 1s;}
+@keyframes show-content{
+  100%{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.navbar .logo{
+  font-size: 30px;
+  font-weight: 700;
+}
+.navbar ul{
+  display: flex;
+ 
+}
+ul{
+  padding-left: 30px;
+}
+.navbar ul li{
+  list-style: none;
+  margin-left: 30px;
+}
+.navbar ul li a{
+  font-size: 20px;
+  font-weight: 500;
+  transition: .5s;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a{
+  color:#62e70a;
+}
